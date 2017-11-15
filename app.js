@@ -37,7 +37,7 @@ var startTrackListener = function() {
       spotifyApi.getTrack(trackId).then(function(trackData) {
         var title = trackData.body['name'];
         var artist = trackData.body['artists'].map(function(a) { return a['name']; }).join();
-        var trackUri = `spotify:track:${trackId}`;
+        var trackUri = `spotify:track:${trackData.body['id']}`;
         
         spotifyApi.addTracksToPlaylist(spotifyUserName, spotifyPlaylistId, [trackUri], {position: 0})
           .then(function(data) {
