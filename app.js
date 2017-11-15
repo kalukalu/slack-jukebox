@@ -97,3 +97,16 @@ setInterval(function() {
       console.log('Error refreshing tokens!', err.message);
     });
 }, 1000);
+
+
+// Bind no-op web server
+var express = require('express');
+var app = express();
+
+app.get('/ping', function (req, res) {
+  res.send('pong');
+});
+
+app.listen(process.env.PORT || 5427, function () {
+  console.log('App started listening!');
+});

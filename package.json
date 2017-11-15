@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "@slack/client": "^3.14.1",
+    "express": "^4.16.2",
     "spotify-web-api-node": "^2.5.0"
   }
 }
