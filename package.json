@@ -1,0 +1,15 @@
+{
+  "name": "slack-jukebox",
+  "version": "1.0.0",
+  "description": "Slack Jukebox - save spotify tracks posted in slack to a spotify playlist",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Kalu Kalu",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/client": "^3.14.1",
+    "spotify-web-api-node": "^2.5.0"
+  }
+}
